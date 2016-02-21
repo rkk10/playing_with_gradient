@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>background</title>
+    <title>gradient</title>
     <style>
         *{
-            margin: 0;
+            margin:0;
             box-sizing: border-box;
-        } 
+        }
         body {
+    background-size: 50px 50px,50px 50px;
+    background-image: radial-gradient(circle,rgba(255, 255, 255, 0) 73%, white 40%),radial-gradient(circle, black 60%, rgba(255, 255, 255, 0) 61%);
+    /* background-repeat: no-repeat,no-repeat; */
+    background-position: left, 0% 40%;
     height: 100vh;
-    background-image: linear-gradient(45deg, rgb(255, 255, 0) 22%,rgb(0, 128, 0) 20%, green 51%, yellow 72% ,yellow 70%,rgb(0, 128, 0) 33%);
-    background-size: 100px 100px;
 }
     </style>
 </head>
